@@ -36,9 +36,10 @@ function excercise3() {
     n = 1 
     m = 10
 
+    const lowest_number:number = (m <= n ? m : n)
     const highest_number:number = (m >= n ? m : n)
 
-    for(let index:number = 1; index <= highest_number; index++){
+    for(let index:number = lowest_number; index <= highest_number; index++){
         result.push(index)
     }
 
